@@ -1,4 +1,4 @@
-console.log('client javascript is loaded')
+
 //const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 const wheatherForm=document.querySelector('form')
