@@ -8,7 +8,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback('invalid data',undefined)
         }
         else{
-            callback(undefined,'it is currently '+ response.body.current.temperature + ' degrees it feels like '+response.body.current.feelslike +' degrees out.' + ' The current humidity is ' + response.body.current.humidity)
+            callback(undefined,'it is currently '+ response.body.current.temperature + ' degrees it feels like '+response.body.current.feelslike +' degrees out.' + ' The current humidity is ' + response.body.current.humidity + "%")
         }
     })
 }
