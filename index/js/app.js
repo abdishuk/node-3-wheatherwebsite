@@ -11,7 +11,7 @@ message2.textContent=''
 wheatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location= searchElement.value
-    const url='http://localhost:3000/wheather?address=' + location
+    const url='/wheather?address=' + location
     fetch(url).then((response)=>{
         response.json().then((data)=>{
            if(data.error){
